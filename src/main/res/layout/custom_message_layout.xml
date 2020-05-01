@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_user_message_layout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icons8_user_account_50px"/>
+
+    <TextView
+        android:id="@+id/txt_friend_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/image_user_message_layout"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/receiver_message_layout"
+        android:hint="receiver message here"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textColor="@android:color/darker_gray"/>
+
+
+    <!-- case user send Images file-->
+    <ImageView
+        android:id="@+id/image_message_sender"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/image_message_friend"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/txt_sender_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/txt_friend_message"
+        android:background="@drawable/sender_message_layout"
+        android:hint="sender message here"
+        android:padding="8dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

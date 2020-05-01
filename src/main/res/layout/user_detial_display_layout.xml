@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+
+        <!-- Circle Images-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/users_profile_images"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/ic_account_circle_black_24dp">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- User Detials text Show-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Text show User Name-->
+                <TextView
+                    android:id="@+id/txt_user_profile_name"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <!--image view show icon status online-->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image_user_online_status"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/icon_online"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+
+            </LinearLayout>
+
+            <!-- Text show User Nick Name-->
+            <TextView
+                android:id="@+id/txt_user_profile_Nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nick Name"
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

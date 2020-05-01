@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@android:color/transparent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="240dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="12dp"
+        app:cardBackgroundColor="@color/editBackground"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_close_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close_black_24dp"
+                android:layout_alignParentRight="true"
+                android:paddingHorizontal="20dp"
+               android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_group_name_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:hint="Group Name"
+                android:text=""
+                android:textSize="18sp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_centerInParent="true"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:orientation="vertical"
+               android:background="@drawable/linear_card_raius"
+               android:layout_alignParentBottom="true">
+
+               <com.google.android.material.button.MaterialButton
+                   android:id="@+id/btn_create_group"
+                   style="@style/Widget.MaterialComponents.Button.TextButton"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:textAppearance="@style/Widget.MaterialComponents.Button.TextButton"
+                   android:text="Create"
+                   android:textSize="20sp" />
+           </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

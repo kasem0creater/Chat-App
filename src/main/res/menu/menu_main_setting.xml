@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_setting"
+        android:title=""
+        android:icon="@drawable/icons8_chat_settings_100px"
+        app:showAsAction="ifRoom"/>
+</menu>

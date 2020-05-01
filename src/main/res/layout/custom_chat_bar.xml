@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/facebookColor">
+
+    <!-- Display Friend Name -->
+    <TextView
+        android:id="@+id/txt_user_name_friend"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:hint="User Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/background"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="14dp" />
+    <!-- Image friend-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_profile_chat"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@android:color/white"
+        android:src="@drawable/icons8_user_account_50px"
+        android:layout_marginTop="5dp" />
+</RelativeLayout>

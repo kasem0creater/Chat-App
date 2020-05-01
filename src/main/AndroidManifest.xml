@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.file.chatapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app_u"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_app_u"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="app.file.chatapp.Chat.chatu.ChatActivity"
+            android:parentActivityName="app.file.chatapp.MainActivity"></activity>
+        <activity android:name="app.file.chatapp.UserProfileActivity" />
+        <activity
+            android:name="app.file.chatapp.FriendsManagement.FindFriendsActivity"
+            android:parentActivityName="app.file.chatapp.MainActivity" />
+        <activity android:name="app.file.chatapp.Chat.group.GroupMessageActivity" />
+        <activity android:name="app.file.chatapp.UserLoginRegister.EditUserActivity" />
+        <activity android:name="app.file.chatapp.UserLoginRegister.RegisterActivity" />
+        <activity android:name="app.file.chatapp.UserLoginRegister.LoginActivity" />
+        <activity android:name="app.file.chatapp.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <service android:name="app.file.chatapp.notifications.firebaseNotify.FirebaseInstanceServer">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service android:name="app.file.chatapp.notifications.firebaseNotify.FirebaseMessageIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

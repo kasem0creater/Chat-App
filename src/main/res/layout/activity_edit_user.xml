@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="app.file.chatapp.UserLoginRegister.EditUserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/editBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="100dp">
+
+            <!--card view container -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_background_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp">
+
+                <!-- scroll item cintainer-->
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scrollbars="vertical">
+
+                    <!--container -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="42dp">
+
+                        <!--Enter user name -->
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="42dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:hint="Name"
+                            android:layout_marginTop="62dp"
+                            app:boxCornerRadiusTopStart="25dp"
+                            app:boxCornerRadiusBottomEnd="25dp"
+                            app:boxStrokeWidth="1dp"
+                            android:layout_gravity="center_horizontal|center">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txt_user_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textAutoComplete"
+                                android:drawableRight="@drawable/ic_supervisor_account_black_24dp"
+                                android:textSize="18sp"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <!--Enter Last name -->
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="42dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:hint="Last Name"
+                            android:layout_marginTop="10dp"
+                            app:boxCornerRadiusTopStart="25dp"
+                            app:boxCornerRadiusBottomEnd="25dp"
+                            app:boxStrokeWidth="1dp"
+                            android:layout_gravity="center_horizontal|center">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txt_lastName_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textAutoComplete"
+                                android:textSize="18sp"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <!--Enter nick name -->
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="42dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:hint="Nick Name"
+                            android:layout_marginTop="10dp"
+                            app:boxCornerRadiusTopStart="25dp"
+                            app:boxCornerRadiusBottomEnd="25dp"
+                            app:boxStrokeWidth="1dp"
+                            android:layout_gravity="center_horizontal|center">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txt_nickName_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textAutoComplete"
+                                android:textSize="18sp"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <!-- button update user data -->
+                        <com.google.android.material.button.MaterialButton
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:id="@+id/btn_update_data_edit"
+                            android:textAppearance="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="200dp"
+                            android:layout_height="60dp"
+                            android:text="Register"
+                            android:layout_marginTop="62dp"
+                            android:textAlignment="center"
+                            android:textSize="22sp"
+                            android:textColor="@android:color/darker_gray"
+                            app:strokeColor="@color/facebookColor"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_gravity="center_horizontal|center"
+                            android:layout_marginBottom="62dp"/>
+
+                    </LinearLayout>
+                </ScrollView>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <!-- image user profile-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/ic_launcher_background"
+            app:civ_border_color="@color/facebookColor"
+            app:civ_border_width="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

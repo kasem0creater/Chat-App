@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.file.chatapp.Chat.group.GroupMessageActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_bar_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+            app:title="Group Chat"
+            app:titleTextColor="@color/background">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- recycle show  messages -->
+
+
+    <!-- bottom menu send message-->
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/txt_message_layout"
+       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+       app:boxCornerRadiusTopStart="15dp"
+       app:boxCornerRadiusTopEnd="15dp"
+       app:boxCornerRadiusBottomEnd="15dp"
+       app:boxCornerRadiusBottomStart="15dp"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginEnd="68dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toStartOf="@id/btn_sendMessage"
+       app:layout_constraintLeft_toLeftOf="parent">
+
+       <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/txt_messages"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="textLongMessage"
+           android:maxLines="50"
+           />
+   </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/btn_sendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/icons8_change_user_52px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/txt_message_layout">
+
+    </ImageButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

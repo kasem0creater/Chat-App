@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/facebookColor</item>
+        <item name="colorPrimaryDark">@color/title</item>
+        <item name="colorAccent">@color/titleContent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="RegisterTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/registerBackground</item>
+        <item name="colorAccent">@color/registerContent</item>
+    </style>
+
+    <style name="EditTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/editBackground</item>
+        <item name="colorPrimaryDark">@color/editBackground</item>
+        <item name="colorAccent">@color/editAccent</item>
+    </style>
+
+
+
+
+    <!-- set the rounded drawable as background to your bottom sheet @drawable/bg_bottom_sheet_dialog_fragment-->
+    <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />
+
+</resources>
